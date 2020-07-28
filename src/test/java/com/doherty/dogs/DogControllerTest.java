@@ -20,7 +20,7 @@ class DogControllerTest {
 
     @Test
     public void healthCheck() throws Exception {
-        mockMvc.perform(get("/health"))
+        mockMvc.perform(get("/dog/health"))
                 .andExpect(content().string(containsString("App works!")));
     }
 
